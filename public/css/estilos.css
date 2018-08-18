@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+@font-face { 
+   font-family: 'Lato';
+   src: url('fonts/Lato/Lato-Light.woff') format('woff');
+   font-family: 'Oxygen';
+   src: url('fonts/Oxygens/Oxygen-Light.woff') format('woff');
+}
+
+*{
+   font-family: 'Tahoma', sans-serif;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   font-size: 1rem;
+   height: 100%;
+   position: relative;
+}
+
+/*[ Menu Topo ]
+-----------------------------------------------------------
+*/
+
+.bg-light {
+   background-color: white !important;
+   border-bottom: 2px solid #9c4f7d;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.nav-item a {
+   font-weight: 700;
+   color: #9c4f7d !important;
+   text-transform: uppercase;
+}
+
+.nav-item a:hover{
+   color: #f6e58d !important;
+}
+
+/*[ Blog Heading]
+-----------------------------------------------------------
+*/
+
+.blog-first-header {
+   height: 80px;
+   width: 100%;
+   text-align: center;
+}
+
+.first-header-heading {
+   height: 30px;
+}
+
+.first-header-heading h1 {
+   font-family: 'Georgia', serif;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 1.5px;
+   color: #9c4f7d;
+   text-transform: uppercase;   
+}
+
+.first-header-subtitle {
+   height: 20px;
+}
+
+.first-header-subtitle h4 {
+   font-size: 16px;
+   content: #333333;
+   color: #222f3e;
+   line-height: 1.4;
+   text-transform: uppercase;   
+}
+
+/* ------------------------------------ */
+
+/* [ Postagens Blogs ]
+-----------------------------------------------------------
+*/
+
+.card-wrapper {
+   min-height: 350px;
+   padding: 0;
+   border:2px solid white;
+}
+
+.card-wrapper a:hover{
+   text-decoration: none !important;
+}
+
+.card-wrapper:hover {
+   border: 2px solid #D2D2D2;
+}
+
+.card-img {
+    border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+   opacity: 1;
+   height: auto;
+   width: auto;
+   display: block;
+   min-width: 100%;
+   overflow: hidden;
+   padding: 0;
+   transition: .5s ease;
+   backface-visibility: hidden;
+   margin: 0;
+}
+
+
+.card-post-heading {
+   height: 350px;
+   padding: 20px;
+   margin: 0;
+}
+
+.card-title {
+   /*padding: 0px 10px;*/
+   height: auto;
+   text-align: left;
+}
+
+.card-title h3{
+   font-size: 1.4375rem;
+   font-family: 'Georgia', serif;
+   font-weight: 600;
+   font-style: normal;
+}
+
+.card-text {
+   height: auto;
+   /*padding: 5px 10px;*/
+}
+
+.card-text p{
+   letter-spacing: 0.8px;
+   color: #1d1d1d !important;
+}
+
+/* ------------------------------------ */
+
+/*[ IMG's Posts - IMG ]
+-----------------------------------------------------------
+*/
+
+.hov-card {
+   color: #ff9f1a;
+   /*display: block;*/
+   overflow: hidden;
+}
+
+.hov-card:hover{
+   color: #993399;
+}
+
+.card-wrapper:hover .card-img {
+  opacity: 0.7;
+}
+
+.card-wrapper:hover .middle {
+  opacity: 0.7;
+}
+
+/*[ Hover IMG ]
+-----------------------------------------------------------
+*/
+
+.hov-img-zoom img{
+   -webkit-transition: all 0.6s;
+   -o-transition: all 0.6s;
+   -moz-transition: all 0.6s;
+   transition: all 0.6s;
+}
+
+.hov-img-zoom:hover img {
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+/* ------------------------------------ */
+
+
+/*[ IMPORTANTE PÁGINA BLOG - Blog-post-txt]
+-----------------------------------------------------------
+*/
+
+.blog-panel{
+   width: 100%;
+}
+
+.blog-panel-heading {
+   height: 100px;
+   display: block;
+   padding:5px 0;
+}
+
+.blog-post-title{
+   height: auto;
+   display: block;
+}
+
+.blog-post-subtitle {
+   display: block;
+   height: auto;   
+}
+
+.blog-post-title h1{
+   color: #540d54;
+   font-family: 'Georgia', sans-serif;
+   font-weight: 600;
+   font-size: 1.6rem;
+   font-style: normal;
+}
+
+.blog-post-subtitle span{
+   font-size: 13px;
+   font-weight: 500;
+   font-family: 'Tahoma', sans-serif;
+   line-height: 1.4;
+   color: #737070;
+}
+
+.blog-post-txt {
+   padding: 0 5px;
+   text-align: left;
+}
+
+.blog-post-txt p {
+   font-family: 'Tahoma', sans-serif;  
+   font-size: 1.0rem;
+   line-height: 1.4;
+   letter-spacing: 1.1px;
+   color: #1d1d1d;
+   display: block;
+}
+
+.list-subtitle {
+   padding: 15px 0;
+   letter-spacing: 1.2px;
+   font-weight: 500;
+}
+
+/** Painel Direito **/ 
+.card, .card-header, .card-footer{
+   border: none;
+   background: white;
+}
+
+.card h1{
+   font-size: 1.6em;
+   color: #993399;
+   font-style: normal;
+   font-family: 'Georgia', serif;
+   font-weight: 600;
+}
+
+.card-border {
+   text-decoration: none !important;
+   border: 2px solid white;
+}
+
+.card-border:hover{
+   border: 2px solid #D2D2D2;
+}
+
+.card h3{
+   font-size: 1.4em;
+   color: #993399;
+   font-style: normal;
+   font-family: 'Georgia', serif;
+   font-weight: 600;
+}
+
+.card-body p {
+   color: #1d1d1d !important;
+   line-height: 1.2;
+   font-size: 1rem;
+}
+
+.card-footer span {
+   color: #993399;
+   font-size: 19px;
+   font-weight: 700;
+}
+
+.card-footer span:hover {
+   text-decoration: underline !important;   
+}
+
+/** Facebook Comentarios **/
+
+.facebook-comments {
+   color:#540d54; 
+   padding-bottom: 30px; 
+   width: 100%; 
+   text-align: left;
+}
+
+.facebook-comments h3{
+   color:#540d54; 
+   padding-bottom: 30px; 
+   width: 100%; 
+   text-align: left;
+   font-weight: 700;
+}
+
+/* ------------------------------------ */
+
+
+/*[ Blog Page - Imagem 820x481 100% da Div ]
+-----------------------------------------------------------
+*/
+.wrap-pic-w img {width: 100%;}
+
+/* ------------------------------------ */
+
+
+/*[ Blog - Person ]
+-----------------------------------------------------------
+*/
+
+.person-blog {
+   margin-left: 10%;
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   height: 200px;
+   width: 55%;
+   padding: 30px 50px;
+   /*width: 100%;*/
+   /*padding: 5px 0*/
+}
+
+/* ------------------------------------ */
+
+
+/*[ Botões  - Cards Index /  ]
+-----------------------------------------------------------
+*/
+
+/** Botões Cards**/
+.btn-outline-warning {
+   color: white;
+   font-weight: bold;
+   background: #ff9f1a;
+   border-color: #ff9f1a; 
+}
+
+.btn-outline-warning:hover {
+   background: white;
+   color: #ff9f1a;
+}
+
+.btn-outline-default {
+   color: #f6e58d;
+   background: #bb0070;
+   border-color: #bb0070; 
+}
+
+/** Botão Form Mensagem  **/
+.btn-outline-default:hover {
+   background: #e2a5c9;
+   color: #f6e58d;
+}
+
+.btn-default {
+   color: #f6e58d;
+   background: #bb0070;
+   border-color: #bb0070; 
+}
+
+.btn-default:hover {
+   color: #f6e58d;
+   background: #e2a5c9;
+}
+
+/* ------------------------------------ */
+
+
+/*[ Section  - Newsletter ]
+-----------------------------------------------------------
+*/
+
+.footer .form-row .input-group-text {
+   color: #e056fd;
+   font-weight: 600;
+   background: white;
+}
+
+.news-form .btn-primary {
+   background: #f0932b;
+   font-weight: bold;
+   color: white;
+   border-color: #f0932b; 
+}
+
+.news-form .btn-primary:hover{
+   background: #feb062;
+}
+
+/* ------------------------------------ */
+
+
+/*[ Wrapper - Footer ]
+-----------------------------------------------------------
+*/
+
+.wrapper {
+   max-width: 100%;
+   margin: 0 auto;
+   padding-top: 150px;
+   padding-bottom: 50px;
+}
+
+.footer {
+   background: #9c4f7d;
+   /*position: absolute;*/
+   bottom: 0;
+   width: 100%;
+   height: 500px;
+   padding: 50px 30px;
+   margin: 0;
+}
+
+/* ------------------------------------ */
+
+
+
+/*[ Footer  - Links Redes Sociais ]
+-----------------------------------------------------------
+*/
+
+.footer-head {
+   height: 50px;
+}
+
+.footer-head h4 {
+   font-size: 26px;
+   line-height: 1.5;
+   font-weight: 600;
+   color: #f6e58d;
+   text-transform: uppercase;
+}
+
+.footer-head p {
+   color: #ededed;
+}
+
+.footer-panel {
+   color: #233142;
+   height: 100px;
+   padding: 20px 0px;
+}
+
+.footer ul {
+   padding-left: 0;
+}
+
+.footer ul li{
+   list-style: none;
+   margin-right: 15px;
+}
+
+.footer ul li a{
+  color: #455d7a;
+}
+
+.footer ul li a:hover{
+  color: #bb0070;
+}
+
+.footer ul li img{
+   max-height: 35px;
+   max-width: 35px;
+}
+
+.footer .footer-panel .list-socials{
+   display: inline-flex;
+}
+
+.footer .footer-panel .list-socials{
+   padding: 0;   
+}
+
+.footer .footer-panel .list-socials li:hover{
+   border-radius: 15px 10px;
+   padding: 0;
+   background: #f6e58d !important;
+}
+
+/* ------------------------------------ */
+
+
+/*[ Mobile ]
+-----------------------------------------------------------
+*/
+
+@media only screen and (max-width: 600px)  {
+
+   .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
+
+   .blog-first-header {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+   }
+
+   .page-first-header {
+      padding-bottom: 20px;
+   }
+
+   .card-post-heading {
+      padding: 10 15px;
+      text-align: left;
+   }
+
+   .card-title {
+      height: 100px;
+   }
+
+   .card-text p{
+      display: block;
+      height: auto;
+      font-size: 15px;  
+   }
+
+   .blog-panelright{
+      display: none;
+   }
+
+   .blog-post-title {
+      height: auto;
+      display: block;
+      text-align: left;
+      width: 100%;
+   }
+
+   .blog-panel-heading {
+      height: auto;
+      display: block;
+   }
+
+   .blog-post-subtitle {
+      display: block;
+      height: auto;      
+   }
+
+   /** FOOTER **/
+   .footer {
+      height: 700px;
+      padding: 50px 30px;
+   }
+
+   .footer-middle {
+      height: 100%;
+   }
+
+    .footer-head {
+      height: auto;
+      padding: 0;
+      margin: 0;
+   }
+
+   .footer-panel {
+      padding: 10px 0px;
+      height: auto;
+      margin: 0;
+   }
+
+   .footer-head h4 {
+      font-size: 16px;
+   }
+
+   .footer-head p {
+      margin: 0;   
+   }
+
+   .footer ul {
+      padding: 5px;
+      list-style: none;
+      display: inline-flex;
+   }
+
+   .footer ul li{
+      padding-bottom: 10px;
+   }
+
+   .list-socials li{padding: 0px !important; margin: 0;}
+
+}
+
+/*@media only screen and (max-width: 570px)  {
+
+
+   .card-post-heading {
+      height: 280px;
+      padding: 5px;
+      margin: 0;
+   }
+
+   .card-title {
+      font-size: 18px;
+      height: 100px;
+      padding: 5px;
+      margin: 0;
+   }
+
+   .card-text p{
+      height: 100px;
+      font-size: 13px;
+      padding: 5px;
+      margin: 0;
+   }
+
+} */
+
+/* ------------------------------------ 
